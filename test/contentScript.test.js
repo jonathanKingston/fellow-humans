@@ -1,0 +1,93 @@
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const { JSDOM } = require('jsdom');
+
+const manifest = require('../src/manifest.json');
+const contentScript = require('../src/contentScript.js');
+
+function createDocument(html, title) {
+  const dom = new JSDOM(
+    `<!doctype html><html><head><title>${title || ''}</title></head><body>${html}</body></html>`,
+    { url: 'https://example.com' }
+  );
+  return dom.window.document;
+}
+
+function createMockObserverCtor(registry) {
+  function MockObserver(callback) {
+    this.callback = callback;
+    this.observedTarget = null;
+    this.observedConfig = null;
+    registry.push(this);
+  }
+
+  MockObserver.prototype.observe = function (target, config) {
+    this.observedTarget = target;
+    this.observedConfig = config;
+  };
+
+  MockObserver.prototype.trigger = function (mutations) {
+    this.callback(mutations);
+  };
+
+  return MockObserver;
+}
+
+test('manifest uses MV3 and keeps content script configuration', function () {
+  assert.equal(manifest.manifest_version, 3);
+  assert.ok(Array.isArray(manifest.content_scripts));
+  assert.equal(manifest.content_scripts.length, 1);
+  assert.deepEqual(manifest.content_scripts[0].matches, ['*://*/*']);
+  assert.deepEqual(manifest.content_scripts[0].js, ['contentScript.js']);
+});
+
+test('changeAllInstances handles singular, plural, uppercase and misses', function () {
+  assert.equal(contentScript.changeAllInstances('migrant'), 'fellow human');
+  assert.equal(contentScript.changeAllInstances('migrants'), 'fellow humans');
+  assert.equal(contentScript.changeAllInstances('MIGRATION'), 'MOVEMENT');
+  assert.equal(contentScript.changeAllInstances('No replacement here'), false);
+});
+
+test('init rewrites body/title and ignores script/style tags', function () {
+  const observers = [];
+  const doc = createDocument(
+    '<p id="target">Immigration impacts migrants.</p><style id="style">.migration { color: red; }</style><script id="script">const label = "migrant";</script>',
+    'Migration update'
+  );
+
+  const observer = contentScript.init(doc, createMockObserverCtor(observers));
+
+  assert.equal(doc.querySelector('#target').textContent, 'movement impacts fellow humans.');
+  assert.equal(doc.title, 'movement update');
+  assert.equal(doc.querySelector('#style').textContent, '.migration { color: red; }');
+  assert.equal(doc.querySelector('#script').textContent, 'const label = "migrant";');
+  assert.equal(observers.length, 1);
+  assert.equal(observer, observers[0]);
+  assert.equal(observer.observedTarget, doc.body);
+  assert.deepEqual(observer.observedConfig, contentScript.observerConfig);
+});
+
+test('observer callback rewrites dynamically added content', function () {
+  const observers = [];
+  const doc = createDocument('<div id="container"></div>', '');
+  const observer = contentScript.init(doc, createMockObserverCtor(observers));
+
+  const dynamicNode = doc.createElement('p');
+  dynamicNode.textContent = 'Migrated migrant';
+  doc.querySelector('#container').appendChild(dynamicNode);
+
+  observer.trigger([
+    {
+      type: 'childList',
+      target: doc.querySelector('#container')
+    }
+  ]);
+
+  assert.equal(dynamicNode.textContent, 'Moved fellow human');
+});
+
+test('init fails fast for missing DOM prerequisites', function () {
+  assert.equal(contentScript.init(null, function () {}), null);
+  assert.equal(contentScript.init({ body: null }, function () {}), null);
+  assert.equal(contentScript.init({ body: {} }, null), null);
+});
