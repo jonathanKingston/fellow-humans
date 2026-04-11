@@ -1,4 +1,4 @@
-var blackListTags = [
+var blockListTags = [
   'script',
   'style'
 ];
@@ -36,7 +36,7 @@ var observerConfig = {
 function processNode(node) {
   var childNode = node.lastChild;
 
-  if (isBlackListedTag(node)) {
+  if (isBlockListedTag(node)) {
     return;
   }
 
@@ -46,14 +46,14 @@ function processNode(node) {
   }
 }
 
-function isBlackListedTag(node) {
-  return Boolean(node && node.tagName && blackListTags.indexOf(node.tagName.toLowerCase()) !== -1);
+function isBlockListedTag(node) {
+  return Boolean(node && node.tagName && blockListTags.indexOf(node.tagName.toLowerCase()) !== -1);
 }
 
 function walkDOM(node) {
   switch (node.nodeType) {
     case 3:
-      if (!isBlackListedTag(node.parentElement)) {
+      if (!isBlockListedTag(node.parentElement)) {
         checkAndChangeText(node);
       }
       break;
@@ -168,11 +168,11 @@ function init(doc, mutationObserverCtor) {
 
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
-    blackListTags: blackListTags,
+    blockListTags: blockListTags,
     matchStrings: matchStrings,
     observerConfig: observerConfig,
     processNode: processNode,
-    isBlackListedTag: isBlackListedTag,
+    isBlockListedTag: isBlockListedTag,
     walkDOM: walkDOM,
     upperCaseFirst: upperCaseFirst,
     isSentenceCase: isSentenceCase,
