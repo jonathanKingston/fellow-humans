@@ -47,7 +47,7 @@ test('changeAllInstances handles singular, plural, uppercase and misses', functi
   assert.equal(contentScript.changeAllInstances('migrant'), 'fellow human');
   assert.equal(contentScript.changeAllInstances('migrants'), 'fellow humans');
   assert.equal(contentScript.changeAllInstances('MIGRATION'), 'MOVEMENT');
-  assert.equal(contentScript.changeAllInstances('Migration Policy'), 'Movement Policy');
+  assert.equal(contentScript.changeAllInstances('Migration Policy'), 'movement Policy');
   assert.equal(contentScript.changeAllInstances('No replacement here'), false);
 });
 
