@@ -4,6 +4,7 @@
   "private": true,
   "description": "Chrome extension replacing migration language with humane alternatives.",
   "scripts": {
+    "build": "make build",
     "test": "node --test \"test/**/*.test.mjs\""
   },
   "devDependencies": {

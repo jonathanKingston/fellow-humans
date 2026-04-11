@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Migration dashboard</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        margin: 2rem;
+      }
+
+      button {
+        font: inherit;
+        padding: 0.6rem 1rem;
+      }
+
+      #dynamic-output {
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Migration dashboard</h1>
+    <p id="static-copy">Immigration affects migrants and people who migrated recently.</p>
+    <button id="add-dynamic-copy" type="button">Add dynamic migration text</button>
+    <div id="dynamic-output" aria-live="polite"></div>
+    <script>
+      document.getElementById('add-dynamic-copy').addEventListener('click', function () {
+        var paragraph = document.createElement('p');
+        paragraph.textContent = 'More migrants migrate every day.';
+        document.getElementById('dynamic-output').appendChild(paragraph);
+      });
+    </script>
+  </body>
+</html>

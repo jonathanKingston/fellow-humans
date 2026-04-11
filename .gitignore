@@ -1,3 +1,6 @@
 *.pem
+*.crx
+*.xpi
 *.zip
+dist/
 node_modules/

@@ -43,6 +43,13 @@ test('manifest uses MV3 and keeps content script configuration', function () {
   assert.deepEqual(manifest.content_scripts[0].js, ['contentScript.js']);
 });
 
+test('manifest asset paths resolve to real files', function () {
+  Object.values(manifest.icons || {}).forEach(function (iconPath) {
+    const resolvedPath = new URL(`../src/${iconPath}`, import.meta.url);
+    assert.equal(fs.existsSync(resolvedPath), true, `Missing manifest asset: ${iconPath}`);
+  });
+});
+
 test('changeAllInstances handles singular, plural, uppercase and misses', function () {
   assert.equal(contentScript.changeAllInstances('migrant'), 'fellow human');
   assert.equal(contentScript.changeAllInstances('migrants'), 'fellow humans');
