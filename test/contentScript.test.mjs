@@ -47,7 +47,16 @@ test('changeAllInstances handles singular, plural, uppercase and misses', functi
   assert.equal(contentScript.changeAllInstances('migrant'), 'fellow human');
   assert.equal(contentScript.changeAllInstances('migrants'), 'fellow humans');
   assert.equal(contentScript.changeAllInstances('MIGRATION'), 'MOVEMENT');
+  assert.equal(contentScript.changeAllInstances('Migration Policy'), 'Movement Policy');
   assert.equal(contentScript.changeAllInstances('No replacement here'), false);
+});
+
+test('isBlockListedTag handles null and blocked tags', function () {
+  assert.equal(contentScript.isBlockListedTag(null), false);
+  assert.equal(contentScript.isBlockListedTag({}), false);
+  assert.equal(contentScript.isBlockListedTag({ tagName: 'STYLE' }), true);
+  assert.equal(contentScript.isBlockListedTag({ tagName: 'SCRIPT' }), true);
+  assert.equal(contentScript.isBlockListedTag({ tagName: 'DIV' }), false);
 });
 
 test('init rewrites body/title and ignores script/style tags', function () {
@@ -86,6 +95,23 @@ test('observer callback rewrites dynamically added content', function () {
   ]);
 
   assert.equal(dynamicNode.textContent, 'Moved fellow human');
+});
+
+test('observer ignores non-childList mutations', function () {
+  const observers = [];
+  const doc = createDocument('<div id="container"><p id="target">Migration</p></div>', '');
+  const observer = contentScript.init(doc, createMockObserverCtor(observers));
+  const target = doc.querySelector('#target');
+  target.textContent = 'migration';
+
+  observer.trigger([
+    {
+      type: 'attributes',
+      target: doc.querySelector('#container')
+    }
+  ]);
+
+  assert.equal(target.textContent, 'migration');
 });
 
 test('init fails fast for missing DOM prerequisites', function () {
