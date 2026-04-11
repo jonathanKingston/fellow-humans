@@ -3,25 +3,25 @@
   <desc id="desc">Two overlapping speech bubbles create an open, humane dialogue icon.</desc>
   <rect width="128" height="128" rx="28" fill="#F4EFE6" />
   <path
-    d="M20 41C20 31.059 28.059 23 38 23H70C79.941 23 88 31.059 88 41V66C88 75.941 79.941 84 70 84H50L34 98V84H38C28.059 84 20 75.941 20 66V41Z"
+    d="M19 42C19 32.059 27.059 24 37 24H69C78.941 24 87 32.059 87 42V67C87 76.941 78.941 85 69 85H50L34 99V85H37C27.059 85 19 76.941 19 67V42Z"
     fill="#0F766E"
   />
   <path
-    d="M40 55C40 46.716 46.716 40 55 40H92C100.284 40 107 46.716 107 55V76C107 84.284 100.284 91 92 91H78L63 104V91H55C46.716 91 40 84.284 40 76V55Z"
+    d="M42 52C42 43.716 48.716 37 57 37H94C102.284 37 109 43.716 109 52V73C109 81.284 102.284 88 94 88H80L65 101V88H57C48.716 88 42 81.284 42 73V52Z"
     fill="#FFF9F2"
     fill-opacity="0.96"
   />
-  <circle cx="49" cy="54" r="7" fill="#FFF9F2" />
-  <circle cx="70" cy="63" r="7" fill="#F97360" />
+  <circle cx="49" cy="56" r="7" fill="#FFF9F2" />
+  <circle cx="72" cy="56" r="7" fill="#F97360" />
   <path
-    d="M43 69C45.5 64 49.5 61 54 61C57.2 61 60.4 62.4 63 65"
+    d="M43 72C46 66 50 63 55 63C58.2 63 61.4 64.4 64 67"
     fill="none"
     stroke="#FFF9F2"
     stroke-linecap="round"
     stroke-width="6"
   />
   <path
-    d="M61 79C63.8 72.5 69 69 74 69C79 69 83.7 72.2 87 78"
+    d="M63 72C65.8 66.5 71 63 76 63C81 63 85.7 66.2 89 72"
     fill="none"
     stroke="#0F766E"
     stroke-linecap="round"

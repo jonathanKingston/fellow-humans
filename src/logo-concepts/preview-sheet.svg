@@ -13,10 +13,10 @@
     <rect width="260" height="220" rx="28" fill="#FFFFFF" stroke="#E2D8CC" />
     <rect x="28" y="28" width="128" height="128" rx="28" fill="#0F766E" />
     <path d="M54 54C54 48.477 58.477 44 64 44H120C125.523 44 130 48.477 130 54V98C130 103.523 125.523 108 120 108H91L72 126V108H64C58.477 108 54 103.523 54 98V54Z" fill="#FFF9F2" />
-    <circle cx="77" cy="74" r="9" fill="#0F766E" />
-    <circle cx="107" cy="74" r="9" fill="#0F766E" />
-    <path d="M67 94C70.5 85.5 78.5 80 86 80C93.5 80 100 85 102.5 92" fill="none" stroke="#F97360" stroke-linecap="round" stroke-width="8" />
-    <path d="M82 92C84.5 87 88 84.5 92 84.5C96 84.5 99.5 87 102 92" fill="none" stroke="#0F766E" stroke-linecap="round" stroke-width="6" />
+    <circle cx="80" cy="74" r="9" fill="#0F766E" />
+    <circle cx="104" cy="74" r="9" fill="#0F766E" />
+    <path d="M70 94C73.8 85.5 81.5 80.5 92 80.5C102.5 80.5 110.2 85.5 114 94" fill="none" stroke="#F97360" stroke-linecap="round" stroke-width="8" />
+    <path d="M82 92C84.8 87 88.1 84.5 92 84.5C95.9 84.5 99.2 87 102 92" fill="none" stroke="#0F766E" stroke-linecap="round" stroke-width="6" />
     <text x="28" y="184" fill="#11302E" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Conversation Bubble</text>
     <text x="28" y="208" fill="#45635F" font-family="Inter, Arial, sans-serif" font-size="15">Two people inside a speech bubble.</text>
   </g>
@@ -25,10 +25,10 @@
     <rect width="260" height="220" rx="28" fill="#FFFFFF" stroke="#E2D8CC" />
     <rect x="28" y="28" width="128" height="128" rx="28" fill="#FFF9F2" />
     <path d="M53 49C53 41.82 58.82 36 66 36H118C125.18 36 131 41.82 131 49V93C131 100.18 125.18 106 118 106H94L74 122V106H66C58.82 106 53 100.18 53 93V49Z" fill="#0F766E" />
-    <path d="M71 56H87V76H76C71.582 76 68 79.582 68 84V89H84V101H62V82C62 67.641 69.387 56 71 56Z" fill="#FFF9F2" />
-    <path d="M101 56H117V76H106C101.582 76 98 79.582 98 84V89H114V101H92V82C92 67.641 99.387 56 101 56Z" fill="#FFF9F2" />
-    <circle cx="78" cy="62" r="5" fill="#F97360" />
-    <circle cx="108" cy="62" r="5" fill="#F97360" />
+    <path d="M67 62H83V82H73C68.582 82 65 85.582 65 90V96H81V108H59V89C59 74.641 66.387 62 67 62Z" fill="#FFF9F2" />
+    <path d="M99 62H115V82H105C100.582 82 97 85.582 97 90V96H113V108H91V89C91 74.641 98.387 62 99 62Z" fill="#FFF9F2" />
+    <circle cx="75" cy="69" r="5" fill="#F97360" />
+    <circle cx="107" cy="69" r="5" fill="#F97360" />
     <text x="28" y="184" fill="#11302E" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Quote People</text>
     <text x="28" y="208" fill="#45635F" font-family="Inter, Arial, sans-serif" font-size="15">Quotation marks become human forms.</text>
   </g>
@@ -36,12 +36,12 @@
   <g transform="translate(660 150)">
     <rect width="260" height="220" rx="28" fill="#FFFFFF" stroke="#E2D8CC" />
     <rect x="28" y="28" width="128" height="128" rx="28" fill="#F4EFE6" />
-    <path d="M48 69C48 59.059 56.059 51 66 51H98C107.941 51 116 59.059 116 69V94C116 103.941 107.941 112 98 112H78L62 126V112H66C56.059 112 48 103.941 48 94V69Z" fill="#0F766E" />
-    <path d="M68 83C68 74.716 74.716 68 83 68H120C128.284 68 135 74.716 135 83V104C135 112.284 128.284 119 120 119H106L91 132V119H83C74.716 119 68 112.284 68 104V83Z" fill="#FFF9F2" fill-opacity=".96" />
-    <circle cx="77" cy="82" r="7" fill="#FFF9F2" />
-    <circle cx="98" cy="91" r="7" fill="#F97360" />
-    <path d="M71 97C73.5 92 77.5 89 82 89C85.2 89 88.4 90.4 91 93" fill="none" stroke="#FFF9F2" stroke-linecap="round" stroke-width="6" />
-    <path d="M89 107C91.8 100.5 97 97 102 97C107 97 111.7 100.2 115 106" fill="none" stroke="#0F766E" stroke-linecap="round" stroke-width="6" />
+    <path d="M44 65C44 55.059 52.059 47 62 47H94C103.941 47 112 55.059 112 65V90C112 99.941 103.941 108 94 108H74L58 122V108H62C52.059 108 44 99.941 44 90V65Z" fill="#0F766E" />
+    <path d="M70 77C70 68.716 76.716 62 85 62H122C130.284 62 137 68.716 137 77V98C137 106.284 130.284 113 122 113H108L93 126V113H85C76.716 113 70 106.284 70 98V77Z" fill="#FFF9F2" fill-opacity=".96" />
+    <circle cx="76" cy="80" r="7" fill="#FFF9F2" />
+    <circle cx="98" cy="84" r="7" fill="#F97360" />
+    <path d="M70 95C72.8 89.8 77 86.5 82 86.5C85.2 86.5 88.8 88 92 91" fill="none" stroke="#FFF9F2" stroke-linecap="round" stroke-width="6" />
+    <path d="M90 97C93 91 97.5 87.5 103 87.5C108 87.5 112.6 90.4 116 96" fill="none" stroke="#0F766E" stroke-linecap="round" stroke-width="6" />
     <text x="28" y="184" fill="#11302E" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Open Dialogue</text>
     <text x="28" y="208" fill="#45635F" font-family="Inter, Arial, sans-serif" font-size="15">Overlapping speech bubbles signal reframing.</text>
   </g>
