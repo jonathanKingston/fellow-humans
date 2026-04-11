@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Quote People concept</title>
+  <desc id="desc">Two human figures sit inside a quotation-mark inspired speech bubble.</desc>
+  <rect width="128" height="128" rx="28" fill="#FFF9F2" />
+  <path
+    d="M25 34C25 26.82 30.82 21 38 21H90C97.18 21 103 26.82 103 34V78C103 85.18 97.18 91 90 91H66L46 107V91H38C30.82 91 25 85.18 25 78V34Z"
+    fill="#0F766E"
+  />
+  <path
+    d="M43 41H59V61H48C43.582 61 40 64.582 40 69V74H56V86H34V67C34 52.641 41.387 41 43 41Z"
+    fill="#FFF9F2"
+  />
+  <path
+    d="M73 41H89V61H78C73.582 61 70 64.582 70 69V74H86V86H64V67C64 52.641 71.387 41 73 41Z"
+    fill="#FFF9F2"
+  />
+  <circle cx="50" cy="47" r="5" fill="#F97360" />
+  <circle cx="80" cy="47" r="5" fill="#F97360" />
+</svg>
