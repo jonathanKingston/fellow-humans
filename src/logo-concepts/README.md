@@ -8,4 +8,4 @@ These SVGs are exploratory logo directions for `Fellow Humans`.
 - `kind-quotes.svg` centers a human figure inside quotation marks as a more literal humane-language option.
 - `preview-sheet.svg` places the current concepts side by side for quick comparison.
 
-They are not wired into `manifest.json` yet, so the shipped extension icon remains unchanged.
+`open-dialogue.svg` is the selected direction and has now been promoted into the shipped icon assets in `src/FH.svg` plus the generated PNG sizes referenced by `manifest.json`.

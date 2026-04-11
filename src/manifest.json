@@ -3,6 +3,9 @@
   "name": "Fellow Humans",
   "version": "0.1",
   "icons": {
+    "16": "FH-16.png",
+    "32": "FH-32.png",
+    "48": "FH-48.png",
     "128": "FH.png"
   },
   "description": "Replaces migration text with more humane alternatives.",
