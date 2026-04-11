@@ -57,8 +57,8 @@ test('init rewrites body/title and ignores script/style tags', function () {
 
   const observer = contentScript.init(doc, createMockObserverCtor(observers));
 
-  assert.equal(doc.querySelector('#target').textContent, 'movement impacts fellow humans.');
-  assert.equal(doc.title, 'movement update');
+  assert.equal(doc.querySelector('#target').textContent, 'Movement impacts fellow humans.');
+  assert.equal(doc.title, 'Movement update');
   assert.equal(doc.querySelector('#style').textContent, '.migration { color: red; }');
   assert.equal(doc.querySelector('#script').textContent, 'const label = "migrant";');
   assert.equal(observers.length, 1);
