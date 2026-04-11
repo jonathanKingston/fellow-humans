@@ -29,7 +29,7 @@ var matchStrings = [
 var observerConfig = {
   attributes: false,
   childList: true,
-  characterData: false,
+  characterData: true,
   subtree: true
 };
 
@@ -134,7 +134,7 @@ function replaceText(match, replaceWith, textString, plural) {
   } else if (match[1].toLowerCase() !== match[1]) {
     return replaceWith.toUpperCase();
   } else if (isSentenceCase(textString)) {
-    return sentenceCase(replaceWith);
+    return upperCaseFirst(replaceWith);
   } else if (match[0].toLowerCase() !== match[0]) {
     return upperCaseFirst(replaceWith);
   }
@@ -158,6 +158,8 @@ function init(doc, mutationObserverCtor) {
     mutations.forEach(function (mutation) {
       if (mutation.type === 'childList') {
         walkDOM(mutation.target);
+      } else if (mutation.type === 'characterData') {
+        checkAndChangeText(mutation.target);
       }
     });
   });
