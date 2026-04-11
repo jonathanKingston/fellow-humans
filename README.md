@@ -1,5 +1,7 @@
 # Fellow Humans
 
+<img src="src/FH.svg" alt="Fellow Humans logo" width="128" height="128" />
+
 Replaces lots of strings of text like 'migration' to 'movement' and 'migrants' to 'fellow humans'.
 
 [Chrome Store extension](https://chrome.google.com/webstore/detail/fellow-humans/npncpfbngkohbacfblnojfihgnnlcbpf)
