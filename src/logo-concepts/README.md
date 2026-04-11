@@ -2,9 +2,10 @@
 
 These SVGs are exploratory logo directions for `Fellow Humans`.
 
-- `conversation-bubble.svg` uses a speech bubble with two people and a shared bridge to emphasize humane language.
+- `conversation-bubble.svg` uses two people plus a centered dialogue mark to avoid the previous face-like read.
 - `quote-people.svg` turns quotation marks into a conversational icon with two human figures.
-- `open-dialogue.svg` uses overlapping speech forms to suggest reframing text in real time.
-- `preview-sheet.svg` places the three concepts side by side for quick comparison.
+- `open-dialogue.svg` now uses paired solid speech bubbles rather than overlapping transparent forms.
+- `kind-quotes.svg` centers a human figure inside quotation marks as a more literal humane-language option.
+- `preview-sheet.svg` places the current concepts side by side for quick comparison.
 
 They are not wired into `manifest.json` yet, so the shipped extension icon remains unchanged.

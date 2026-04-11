@@ -1,48 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 420" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 700" role="img" aria-labelledby="title desc">
   <title id="title">Fellow Humans logo concept preview sheet</title>
-  <desc id="desc">Three logo directions shown side by side for comparison.</desc>
-  <rect width="980" height="420" fill="#FBF7F1" />
+  <desc id="desc">Four logo directions shown in a two by two layout for comparison.</desc>
+  <rect width="980" height="700" fill="#FBF7F1" />
   <text x="60" y="72" fill="#11302E" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">
     Fellow Humans logo concepts
   </text>
   <text x="60" y="106" fill="#45635F" font-family="Inter, Arial, sans-serif" font-size="18">
-    Warm, small-size-friendly options centered on humane language and conversation.
+    Second-round options with a cleaner dialogue read and a new human-centered quotes direction.
   </text>
 
   <g transform="translate(60 150)">
-    <rect width="260" height="220" rx="28" fill="#FFFFFF" stroke="#E2D8CC" />
-    <rect x="28" y="28" width="128" height="128" rx="28" fill="#0F766E" />
-    <path d="M54 54C54 48.477 58.477 44 64 44H120C125.523 44 130 48.477 130 54V98C130 103.523 125.523 108 120 108H91L72 126V108H64C58.477 108 54 103.523 54 98V54Z" fill="#FFF9F2" />
-    <circle cx="80" cy="74" r="9" fill="#0F766E" />
-    <circle cx="104" cy="74" r="9" fill="#0F766E" />
-    <path d="M70 94C73.8 85.5 81.5 80.5 92 80.5C102.5 80.5 110.2 85.5 114 94" fill="none" stroke="#F97360" stroke-linecap="round" stroke-width="8" />
-    <path d="M82 92C84.8 87 88.1 84.5 92 84.5C95.9 84.5 99.2 87 102 92" fill="none" stroke="#0F766E" stroke-linecap="round" stroke-width="6" />
-    <text x="28" y="184" fill="#11302E" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Conversation Bubble</text>
-    <text x="28" y="208" fill="#45635F" font-family="Inter, Arial, sans-serif" font-size="15">Two people inside a speech bubble.</text>
+    <rect width="400" height="220" rx="28" fill="#FFFFFF" stroke="#E2D8CC" />
+    <g transform="translate(30 28)">
+      <rect width="128" height="128" rx="28" fill="#0F766E" />
+      <path d="M26 28C26 22.477 30.477 18 36 18H92C97.523 18 102 22.477 102 28V72C102 77.523 97.523 82 92 82H63L44 100V82H36C30.477 82 26 77.523 26 72V28Z" fill="#FFF9F2" />
+      <rect x="57" y="33" width="14" height="6" rx="3" fill="#F97360" />
+      <circle cx="47" cy="48" r="8" fill="#0F766E" />
+      <circle cx="81" cy="48" r="8" fill="#0F766E" />
+      <path d="M37 64C39.5 58 43.5 55 47 55C50.5 55 54.5 58 57 64" fill="none" stroke="#0F766E" stroke-linecap="round" stroke-width="6" />
+      <path d="M71 64C73.5 58 77.5 55 81 55C84.5 55 88.5 58 91 64" fill="none" stroke="#0F766E" stroke-linecap="round" stroke-width="6" />
+    </g>
+    <text x="190" y="82" fill="#11302E" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Conversation Bubble</text>
+    <text x="190" y="112" fill="#45635F" font-family="Inter, Arial, sans-serif" font-size="16">Two people, one clear dialogue mark.</text>
+    <text x="30" y="186" fill="#45635F" font-family="Inter, Arial, sans-serif" font-size="15">Removes the moustache-like lower curve and makes the symbol read as exchange instead of a face.</text>
   </g>
 
-  <g transform="translate(360 150)">
-    <rect width="260" height="220" rx="28" fill="#FFFFFF" stroke="#E2D8CC" />
-    <rect x="28" y="28" width="128" height="128" rx="28" fill="#FFF9F2" />
-    <path d="M53 49C53 41.82 58.82 36 66 36H118C125.18 36 131 41.82 131 49V93C131 100.18 125.18 106 118 106H94L74 122V106H66C58.82 106 53 100.18 53 93V49Z" fill="#0F766E" />
-    <path d="M67 62H83V82H73C68.582 82 65 85.582 65 90V96H81V108H59V89C59 74.641 66.387 62 67 62Z" fill="#FFF9F2" />
-    <path d="M99 62H115V82H105C100.582 82 97 85.582 97 90V96H113V108H91V89C91 74.641 98.387 62 99 62Z" fill="#FFF9F2" />
-    <circle cx="75" cy="69" r="5" fill="#F97360" />
-    <circle cx="107" cy="69" r="5" fill="#F97360" />
-    <text x="28" y="184" fill="#11302E" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Quote People</text>
-    <text x="28" y="208" fill="#45635F" font-family="Inter, Arial, sans-serif" font-size="15">Quotation marks become human forms.</text>
+  <g transform="translate(520 150)">
+    <rect width="400" height="220" rx="28" fill="#FFFFFF" stroke="#E2D8CC" />
+    <g transform="translate(30 28)">
+      <rect width="128" height="128" rx="28" fill="#FFF9F2" />
+      <path d="M25 34C25 26.82 30.82 21 38 21H90C97.18 21 103 26.82 103 34V78C103 85.18 97.18 91 90 91H66L46 107V91H38C30.82 91 25 85.18 25 78V34Z" fill="#0F766E" />
+      <path d="M42 46H58V66H47C42.582 66 39 69.582 39 74V79H55V91H33V72C33 57.641 40.387 46 42 46Z" fill="#FFF9F2" />
+      <path d="M70 46H86V66H75C70.582 66 67 69.582 67 74V79H83V91H61V72C61 57.641 68.387 46 70 46Z" fill="#FFF9F2" />
+      <circle cx="49" cy="54" r="5" fill="#F97360" />
+      <circle cx="77" cy="54" r="5" fill="#F97360" />
+    </g>
+    <text x="190" y="82" fill="#11302E" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Quote People</text>
+    <text x="190" y="112" fill="#45635F" font-family="Inter, Arial, sans-serif" font-size="16">Quotation marks become human figures.</text>
+    <text x="30" y="186" fill="#45635F" font-family="Inter, Arial, sans-serif" font-size="15">Still the smartest concept in the set, though it asks for a little more interpretation at small sizes.</text>
   </g>
 
-  <g transform="translate(660 150)">
-    <rect width="260" height="220" rx="28" fill="#FFFFFF" stroke="#E2D8CC" />
-    <rect x="28" y="28" width="128" height="128" rx="28" fill="#F4EFE6" />
-    <path d="M44 65C44 55.059 52.059 47 62 47H94C103.941 47 112 55.059 112 65V90C112 99.941 103.941 108 94 108H74L58 122V108H62C52.059 108 44 99.941 44 90V65Z" fill="#0F766E" />
-    <path d="M70 77C70 68.716 76.716 62 85 62H122C130.284 62 137 68.716 137 77V98C137 106.284 130.284 113 122 113H108L93 126V113H85C76.716 113 70 106.284 70 98V77Z" fill="#FFF9F2" fill-opacity=".96" />
-    <circle cx="76" cy="80" r="7" fill="#FFF9F2" />
-    <circle cx="98" cy="84" r="7" fill="#F97360" />
-    <path d="M70 95C72.8 89.8 77 86.5 82 86.5C85.2 86.5 88.8 88 92 91" fill="none" stroke="#FFF9F2" stroke-linecap="round" stroke-width="6" />
-    <path d="M90 97C93 91 97.5 87.5 103 87.5C108 87.5 112.6 90.4 116 96" fill="none" stroke="#0F766E" stroke-linecap="round" stroke-width="6" />
-    <text x="28" y="184" fill="#11302E" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Open Dialogue</text>
-    <text x="28" y="208" fill="#45635F" font-family="Inter, Arial, sans-serif" font-size="15">Overlapping speech bubbles signal reframing.</text>
+  <g transform="translate(60 430)">
+    <rect width="400" height="220" rx="28" fill="#FFFFFF" stroke="#E2D8CC" />
+    <g transform="translate(30 28)">
+      <rect width="128" height="128" rx="28" fill="#FFF9F2" />
+      <path d="M16 42C16 34.268 22.268 28 30 28H50C57.732 28 64 34.268 64 42V58C64 65.732 57.732 72 50 72H38L28 84V72H30C22.268 72 16 65.732 16 58V42Z" fill="#F97360" />
+      <path d="M64 42C64 34.268 70.268 28 78 28H98C105.732 28 112 34.268 112 42V58C112 65.732 105.732 72 98 72H96V84L86 72H78C70.268 72 64 65.732 64 58V42Z" fill="#0F766E" />
+      <rect x="29" y="42" width="22" height="6" rx="3" fill="#FFF9F2" />
+      <rect x="29" y="54" width="15" height="6" rx="3" fill="#FFF9F2" />
+      <rect x="77" y="42" width="18" height="6" rx="3" fill="#FFF9F2" />
+      <rect x="77" y="54" width="24" height="6" rx="3" fill="#FFF9F2" />
+    </g>
+    <text x="190" y="82" fill="#11302E" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Open Dialogue</text>
+    <text x="190" y="112" fill="#45635F" font-family="Inter, Arial, sans-serif" font-size="16">Paired bubbles with no muddy overlap.</text>
+    <text x="30" y="186" fill="#45635F" font-family="Inter, Arial, sans-serif" font-size="15">Rebuilt as solid mirrored chat forms so the color system is clearer and more icon-friendly.</text>
+  </g>
+
+  <g transform="translate(520 430)">
+    <rect width="400" height="220" rx="28" fill="#FFFFFF" stroke="#E2D8CC" />
+    <g transform="translate(30 28)">
+      <rect width="128" height="128" rx="28" fill="#0F766E" />
+      <path d="M24 40C24 31.163 31.163 24 40 24H88C96.837 24 104 31.163 104 40V68C104 76.837 96.837 84 88 84H61L46 98V84H40C31.163 84 24 76.837 24 68V40Z" fill="#FFF9F2" />
+      <path d="M44 42H52V54H47C44.239 54 42 56.239 42 59V62H50V70H38V57C38 48.026 42.651 42 44 42Z" fill="#F97360" />
+      <path d="M76 42H84V54H79C76.239 54 74 56.239 74 59V62H82V70H70V57C70 48.026 74.651 42 76 42Z" fill="#F97360" />
+      <circle cx="64" cy="55" r="7" fill="#0F766E" />
+      <path d="M52 74C55 67 59 63 64 63C69 63 73 67 76 74" fill="none" stroke="#0F766E" stroke-linecap="round" stroke-width="6" />
+    </g>
+    <text x="190" y="82" fill="#11302E" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Kind Quotes</text>
+    <text x="190" y="112" fill="#45635F" font-family="Inter, Arial, sans-serif" font-size="16">A human figure centered inside language.</text>
+    <text x="30" y="186" fill="#45635F" font-family="Inter, Arial, sans-serif" font-size="15">New option that makes the humane-language idea explicit by putting the person inside the quotes.</text>
   </g>
 </svg>

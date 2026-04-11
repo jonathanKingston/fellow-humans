@@ -1,30 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
   <title id="title">Open Dialogue concept</title>
-  <desc id="desc">Two overlapping speech bubbles create an open, humane dialogue icon.</desc>
-  <rect width="128" height="128" rx="28" fill="#F4EFE6" />
+  <desc id="desc">Two balanced speech bubbles use solid fills and mirrored text lines to signal dialogue.</desc>
+  <rect width="128" height="128" rx="28" fill="#FFF9F2" />
   <path
-    d="M19 42C19 32.059 27.059 24 37 24H69C78.941 24 87 32.059 87 42V67C87 76.941 78.941 85 69 85H50L34 99V85H37C27.059 85 19 76.941 19 67V42Z"
+    d="M16 42C16 34.268 22.268 28 30 28H50C57.732 28 64 34.268 64 42V58C64 65.732 57.732 72 50 72H38L28 84V72H30C22.268 72 16 65.732 16 58V42Z"
+    fill="#F97360"
+  />
+  <path
+    d="M64 42C64 34.268 70.268 28 78 28H98C105.732 28 112 34.268 112 42V58C112 65.732 105.732 72 98 72H96V84L86 72H78C70.268 72 64 65.732 64 58V42Z"
     fill="#0F766E"
   />
-  <path
-    d="M42 52C42 43.716 48.716 37 57 37H94C102.284 37 109 43.716 109 52V73C109 81.284 102.284 88 94 88H80L65 101V88H57C48.716 88 42 81.284 42 73V52Z"
-    fill="#FFF9F2"
-    fill-opacity="0.96"
-  />
-  <circle cx="49" cy="56" r="7" fill="#FFF9F2" />
-  <circle cx="72" cy="56" r="7" fill="#F97360" />
-  <path
-    d="M43 72C46 66 50 63 55 63C58.2 63 61.4 64.4 64 67"
-    fill="none"
-    stroke="#FFF9F2"
-    stroke-linecap="round"
-    stroke-width="6"
-  />
-  <path
-    d="M63 72C65.8 66.5 71 63 76 63C81 63 85.7 66.2 89 72"
-    fill="none"
-    stroke="#0F766E"
-    stroke-linecap="round"
-    stroke-width="6"
-  />
+  <rect x="29" y="42" width="22" height="6" rx="3" fill="#FFF9F2" />
+  <rect x="29" y="54" width="15" height="6" rx="3" fill="#FFF9F2" />
+  <rect x="77" y="42" width="18" height="6" rx="3" fill="#FFF9F2" />
+  <rect x="77" y="54" width="24" height="6" rx="3" fill="#FFF9F2" />
 </svg>

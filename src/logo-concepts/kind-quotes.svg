@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Kind Quotes concept</title>
+  <desc id="desc">Quotation marks frame a human figure to center people inside the language mark.</desc>
+  <rect width="128" height="128" rx="28" fill="#0F766E" />
+  <path
+    d="M24 40C24 31.163 31.163 24 40 24H88C96.837 24 104 31.163 104 40V68C104 76.837 96.837 84 88 84H61L46 98V84H40C31.163 84 24 76.837 24 68V40Z"
+    fill="#FFF9F2"
+  />
+  <path
+    d="M44 42H52V54H47C44.239 54 42 56.239 42 59V62H50V70H38V57C38 48.026 42.651 42 44 42Z"
+    fill="#F97360"
+  />
+  <path
+    d="M76 42H84V54H79C76.239 54 74 56.239 74 59V62H82V70H70V57C70 48.026 74.651 42 76 42Z"
+    fill="#F97360"
+  />
+  <circle cx="64" cy="55" r="7" fill="#0F766E" />
+  <path
+    d="M52 74C55 67 59 63 64 63C69 63 73 67 76 74"
+    fill="none"
+    stroke="#0F766E"
+    stroke-linecap="round"
+    stroke-width="6"
+  />
+</svg>
