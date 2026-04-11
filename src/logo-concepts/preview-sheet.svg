@@ -14,7 +14,7 @@
     <g transform="translate(30 28)">
       <rect width="128" height="128" rx="28" fill="#0F766E" />
       <path d="M26 28C26 22.477 30.477 18 36 18H92C97.523 18 102 22.477 102 28V72C102 77.523 97.523 82 92 82H63L44 100V82H36C30.477 82 26 77.523 26 72V28Z" fill="#FFF9F2" />
-      <rect x="57" y="33" width="14" height="6" rx="3" fill="#F97360" />
+      <rect x="57" y="37" width="14" height="6" rx="3" fill="#F97360" />
       <circle cx="47" cy="48" r="8" fill="#0F766E" />
       <circle cx="81" cy="48" r="8" fill="#0F766E" />
       <path d="M37 64C39.5 58 43.5 55 47 55C50.5 55 54.5 58 57 64" fill="none" stroke="#0F766E" stroke-linecap="round" stroke-width="6" />
@@ -44,8 +44,8 @@
     <rect width="400" height="220" rx="28" fill="#FFFFFF" stroke="#E2D8CC" />
     <g transform="translate(30 28)">
       <rect width="128" height="128" rx="28" fill="#FFF9F2" />
-      <path d="M16 42C16 34.268 22.268 28 30 28H50C57.732 28 64 34.268 64 42V58C64 65.732 57.732 72 50 72H38L28 84V72H30C22.268 72 16 65.732 16 58V42Z" fill="#F97360" />
-      <path d="M64 42C64 34.268 70.268 28 78 28H98C105.732 28 112 34.268 112 42V58C112 65.732 105.732 72 98 72H96V84L86 72H78C70.268 72 64 65.732 64 58V42Z" fill="#0F766E" />
+      <path d="M14 42C14 34.268 20.268 28 28 28H48C55.732 28 62 34.268 62 42V58C62 65.732 55.732 72 48 72H36L26 84V72H28C20.268 72 14 65.732 14 58V42Z" fill="#F97360" />
+      <path d="M66 42C66 34.268 72.268 28 80 28H100C107.732 28 114 34.268 114 42V58C114 65.732 107.732 72 100 72H98V84L88 72H80C72.268 72 66 65.732 66 58V42Z" fill="#0F766E" />
       <rect x="29" y="42" width="22" height="6" rx="3" fill="#FFF9F2" />
       <rect x="29" y="54" width="15" height="6" rx="3" fill="#FFF9F2" />
       <rect x="77" y="42" width="18" height="6" rx="3" fill="#FFF9F2" />

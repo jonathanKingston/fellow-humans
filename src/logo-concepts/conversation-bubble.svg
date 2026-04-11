@@ -6,7 +6,7 @@
     d="M26 28C26 22.477 30.477 18 36 18H92C97.523 18 102 22.477 102 28V72C102 77.523 97.523 82 92 82H63L44 100V82H36C30.477 82 26 77.523 26 72V28Z"
     fill="#FFF9F2"
   />
-  <rect x="57" y="33" width="14" height="6" rx="3" fill="#F97360" />
+  <rect x="57" y="36" width="14" height="6" rx="3" fill="#F97360" />
   <circle cx="47" cy="48" r="8" fill="#0F766E" />
   <circle cx="81" cy="48" r="8" fill="#0F766E" />
   <path
