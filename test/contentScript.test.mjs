@@ -1,9 +1,11 @@
-const test = require('node:test');
-const assert = require('node:assert/strict');
-const { JSDOM } = require('jsdom');
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import { JSDOM } from 'jsdom';
+import contentScript from '../src/contentScript.js';
 
-const manifest = require('../src/manifest.json');
-const contentScript = require('../src/contentScript.js');
+const manifestPath = new URL('../src/manifest.json', import.meta.url);
+const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
 
 function createDocument(html, title) {
   const dom = new JSDOM(

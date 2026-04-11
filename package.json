@@ -4,7 +4,7 @@
   "private": true,
   "description": "Chrome extension replacing migration language with humane alternatives.",
   "scripts": {
-    "test": "node --test \"test/**/*.test.js\""
+    "test": "node --test \"test/**/*.test.mjs\""
   },
   "devDependencies": {
     "jsdom": "^29.0.2"
