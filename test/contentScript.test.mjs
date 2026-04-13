@@ -50,11 +50,11 @@ test('manifest asset paths resolve to real files', function () {
   });
 });
 
-test('changeAllInstances handles singular, plural, uppercase and misses', function () {
+test('changeAllInstances handles singular, plural, title case, uppercase and misses', function () {
   assert.equal(contentScript.changeAllInstances('migrant'), 'fellow human');
   assert.equal(contentScript.changeAllInstances('migrants'), 'fellow humans');
   assert.equal(contentScript.changeAllInstances('MIGRATION'), 'MOVEMENT');
-  assert.equal(contentScript.changeAllInstances('Migration Policy'), 'movement Policy');
+  assert.equal(contentScript.changeAllInstances('Migration Policy'), 'Movement Policy');
   assert.equal(contentScript.changeAllInstances('No replacement here'), false);
 });
 
@@ -102,6 +102,24 @@ test('observer callback rewrites dynamically added content', function () {
   ]);
 
   assert.equal(dynamicNode.textContent, 'Moved fellow human');
+});
+
+test('observer callback rewrites in-place text updates', function () {
+  const observers = [];
+  const doc = createDocument('<div id="container"><p id="target">clean copy</p></div>', '');
+  const observer = contentScript.init(doc, createMockObserverCtor(observers));
+  const targetTextNode = doc.querySelector('#target').firstChild;
+
+  targetTextNode.nodeValue = 'migration update';
+
+  observer.trigger([
+    {
+      type: 'characterData',
+      target: targetTextNode
+    }
+  ]);
+
+  assert.equal(targetTextNode.nodeValue, 'movement update');
 });
 
 test('observer ignores non-childList mutations', function () {
